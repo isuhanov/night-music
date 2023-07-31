@@ -1,0 +1,10 @@
+<svg width="45" height="46" viewBox="0 0 45 46" xmlns="http://www.w3.org/2000/svg">
+<g id="play">
+<path id="Vector" d="M40.125 24.6875L31.6875 29L25.6875 23L31.6875 17L40.125 21.125C41.625 21.875 41.625 24.125 40.125 24.6875Z"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M31.6875 17L25.6875 23L7.6875 41L6.5625 41.5625C5.25 42.3125 3.75 41.1875 3.75 39.6875V6.31246C3.75 4.81246 5.25 3.87496 6.5625 4.43746L31.6875 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Vector_3">
+<path d="M31.6875 29L7.6875 41L25.6875 23L31.6875 29ZM25.6875 23L7.6875 5L25.6875 23Z" />
+<path d="M25.6875 23L7.6875 41L31.6875 29L25.6875 23ZM25.6875 23L7.6875 5"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

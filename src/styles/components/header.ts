@@ -38,7 +38,7 @@ export const SearchButton = styled(IconButton)`
     background-color: inherit;
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.bgTertiary};
+        background-color: ${({ theme }) => theme.colors.bgHover};
     }
 
     svg {
@@ -59,7 +59,7 @@ export const HeaderControls = styled.div`
 export const MenuButton = styled(IconButton)`
     background-color: ${({ theme }) => theme.colors.bgSecondary};
     &:hover {
-        background-color: ${({ theme }) => theme.colors.bgTertiary};
+        background-color: ${({ theme }) => theme.colors.bgHover};
     }
 
     svg {

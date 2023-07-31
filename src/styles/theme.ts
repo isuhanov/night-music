@@ -7,6 +7,8 @@ export const theme = {
         fontSecondary: '#9D9D9D',
         bg: '#292929',
         bgSecondary: '#222222',
-        bgTertiary: '#404040'
+        bgTertiary: '#404040',
+        bgHover: '#323232',
+        timeLineFill: '#FFFFFF'
     },
 }
