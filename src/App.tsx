@@ -3,13 +3,17 @@ import Header from './components/header/Header';
 import Player from './components/player/Player';
 import Menu from './components/menu/Menu';
 
+import { useMenu } from './hooks/useMenu';
+
 const App = () => {
+
+    const { menuVisible } = useMenu();
     return (
         <Common.Body>
             <Common.Content>
                 <Header />
-                <Menu />
                 <Common.Main />
+                { menuVisible && <Menu /> }
             </Common.Content>
             <Player />
         </Common.Body>

@@ -4,10 +4,13 @@ import { ReactComponent as HomeIcon } from '../../assets/icons/menu/home.svg';
 import { ReactComponent as TraksIcon } from '../../assets/icons/menu/traks.svg';
 import { ReactComponent as PlaylitsIcon } from '../../assets/icons/menu/playlits.svg';
 import { ReactComponent as HistoryIcon } from '../../assets/icons/menu/history.svg';
+import { useMenu } from '../../hooks/useMenu';
 
 const MenuItems = () => {
+    const { closeMenu } = useMenu();
+
     return (
-        <Styles.MenuItemsWrapper>
+        <Styles.MenuItemsWrapper onClick={closeMenu}>
             <Styles.MenuItem showFill={false}>
                 <HomeIcon />
                 <Styles.MenuItemName>Главная</Styles.MenuItemName>

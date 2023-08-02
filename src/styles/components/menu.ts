@@ -1,8 +1,18 @@
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
 import { svgIconsBg } from "./common";
 import { ISvgIcons } from "../../ts/interfaces/styles/svg-icons";
 
-export const Menu = styled.div`
+const open = keyframes`
+    from { left: -300px; }
+    to { left: 0px; }
+`;
+
+const close = keyframes`
+    from { left: 0px; }
+    to { left: -300px; }
+`;
+
+export const Menu = styled.div<{ isOpen: boolean }>`
     position: absolute;
     top: 0;
     left: 0;
@@ -15,6 +25,7 @@ export const Menu = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: ${({ theme }) => theme.colors.bgSecondary};
+    animation: ${({ isOpen }) => isOpen ? open : close} .2s linear;
 `;
 
 export const MenuItemsWrapper = styled.div`
