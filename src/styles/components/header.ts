@@ -48,6 +48,8 @@ export const SearchButton = styled(IconButton)`
 `;
 
 export const HeaderControls = styled.div`
+    position: relative;
+    z-index: 200;
     height: 100%;
     display: flex;
     flex-direction: row;

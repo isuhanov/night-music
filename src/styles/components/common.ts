@@ -1,8 +1,8 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 import { IFlexContainer } from "../../ts/interfaces/styles/flex-container";
 import { Direction, Wrap } from "../../ts/enums/flex";
-import { stringify } from "querystring";
+import { ISvgIcons } from "../../ts/interfaces/styles/svg-icons";
 
 
 export const Container = styled.div`
@@ -43,6 +43,15 @@ export const Main = styled.main`
     align-items: center;
 `;
 
+export const Content = styled.div`
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+`;
+
 export const IconButton = styled.button`
     width: 45px;
     height: 45px;
@@ -58,6 +67,23 @@ export const IconButton = styled.button`
         path {
             stroke: ${({ theme }) => theme.colors.font};
         }
+    }
+`;
+
+export const svgIconsBg = css<ISvgIcons>`
+    svg {
+            ${({ showFill = true, showStroke = true }) => 
+                css`
+                    ${({ theme }) => (
+                        `
+                            fill: ${ showFill ? theme.colors.font : 'none'};
+                            path {
+                                stroke: ${ showStroke ? theme.colors.font : 'none'};
+                            }
+                        `
+                    )}
+                `
+            }
     }
 `;
 

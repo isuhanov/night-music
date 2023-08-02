@@ -1,7 +1,8 @@
 import { css, styled } from "styled-components";
 
 import { ITimeLineFill } from "../../ts/interfaces/styles/time-line-fill";
-import { IControlsBtn } from "../../ts/interfaces/styles/controls-btn";
+import { ISvgIcons } from "../../ts/interfaces/styles/svg-icons";
+import { svgIconsBg } from "./common";
 
 export const Player = styled.div`
     width: 100%;
@@ -44,7 +45,7 @@ const sideControl = css`
     height: 25px;
 `;
 
-export const ControlsBtn = styled.button<IControlsBtn>`
+export const ControlsBtn = styled.button<ISvgIcons>`
     height: 75px;
     width: 75px;
     display: flex;
@@ -56,19 +57,9 @@ export const ControlsBtn = styled.button<IControlsBtn>`
         background-color: ${({ theme }) => theme.colors.bgHover};
     }
 
+
+    ${svgIconsBg}
     svg {
-        ${({ showFill = true, showStroke = true }) => 
-            css`
-                ${({ theme }) => (
-                    `
-                        fill: ${ showFill ? theme.colors.font : 'none'};
-                        path {
-                            stroke: ${ showStroke ? theme.colors.font : 'none'};
-                        }
-                    `
-                )}
-            `
-        }
         ${({ typeSize }) => typeSize === 'main' ? mainControl : sideControl}
     }
 `;
