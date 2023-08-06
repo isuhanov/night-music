@@ -10,9 +10,9 @@ const Header = () => {
     const { changeStateMenu } = useMenu();
     
     return (
-        <Styles.Header>
+        <Styles.Header data-testid='header'>
             <Styles.HeaderControls>
-                <Styles.MenuButton onClick={changeStateMenu}>
+                <Styles.MenuButton onClick={changeStateMenu} data-testid='menu-button'>
                     <BergerIcon />
                 </Styles.MenuButton>
                 <ProfileButton />

@@ -5,7 +5,7 @@ import TrackControls from './controls/TrackControls';
 
 const Player = () => {
     return (
-        <Styles.Player>
+        <Styles.Player data-testid='player'>
             <TimeLine />
             <TrackControls />
         </Styles.Player>

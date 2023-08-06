@@ -6,10 +6,10 @@ import { useMenu } from '../../hooks/useMenu';
 
 
 const Menu = () => {
-    const { menuOpen, closeMenu } = useMenu();
+    const { menuOpen } = useMenu();
 
     return (
-        <Styles.Menu isOpen={menuOpen}>
+        <Styles.Menu isOpen={menuOpen} data-testid="menu">
             <MenuItems />
             <Styles.MenuItem showFill={false}>
                 <Settings />
